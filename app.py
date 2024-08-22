@@ -10,7 +10,7 @@ def hello():
 
 @app.route("/greet/<name>")
 def greet(name):
-    return "Hello Mr/Mrs {0} ".format(name)
+    return "Hello Mr/Mrs {0} !!".format(name)
 
 
 if __name__ == "__main__":
