@@ -8,7 +8,7 @@ def hello():
     return "Hello World"
 
 
-@app.route("/greet/<int:param>/")
+@app.route("/greet/<str:param>/")
 def greet(param):
     return "Hello Mr/Mrs " + param
 
