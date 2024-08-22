@@ -8,9 +8,9 @@ def hello():
     return "Hello World"
 
 
-@app.route("/greet/<str:param>/")
-def greet(param):
-    return "Hello Mr/Mrs " + param
+@app.route("/greet/<name>")
+def greet(name):
+    return "Hello Mr/Mrs {0} ".format(name)
 
 
 if __name__ == "__main__":
